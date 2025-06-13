@@ -81,12 +81,12 @@
 
                     <div class="flex items-center justify-between p-4">
                         <!-- Forgot Password Link -->
-                        <a
+                        <!-- <a
                             class="cursor-pointer text-xs font-semibold leading-6 text-brandColor"
                             href="{{ route('admin.forgot_password.create') }}"
                         >
                             @lang('admin::app.users.login.forget-password-link')
-                        </a>
+                        </a> -->
 
                         <!-- Submit Button -->
                         <button
@@ -103,11 +103,11 @@
         </div>
 
         <!-- Powered By -->
-        <div class="text-sm font-normal">
+        <!-- <div class="text-sm font-normal">
             @lang('admin::app.components.layouts.powered-by.description', [
                 'krayin' => '<a class="text-brandColor hover:underline " href="https://krayincrm.com/">Krayin</a>',
                 'webkul' => '<a class="text-brandColor hover:underline " href="https://webkul.com/">Webkul</a>',
-            ]) 
+            ]) -->
         </div>
     </div>
 
