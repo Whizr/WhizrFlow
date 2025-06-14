@@ -52,6 +52,17 @@ return [
             'endpoint' => env('AWS_ENDPOINT'),
         ],
 
+	'gcs' => [
+	    'driver' => 'gcs',
+	    'project_id' => env('GOOGLE_CLOUD_PROJECT_ID'),
+	    'key_file_path' => env('GOOGLE_CLOUD_KEY_FILE', null),
+	    'bucket' => env('GOOGLE_CLOUD_STORAGE_BUCKET'),
+	    'visibility' => 'public', // optional: public|private
+	    'visibility_handler' => null,
+	    'metadata' => ['cacheControl'=> 'public,max-age=86400'],
+	    'throw' => true,
+	],
+
     ],
 
     /*
